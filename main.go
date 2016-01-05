@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	t := 0.0
+	var t float64
 	s := bufio.NewScanner(os.Stdin)
 	for s.Scan() {
 		f, err := strconv.ParseFloat(s.Text(), 64)
